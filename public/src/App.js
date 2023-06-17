@@ -4,6 +4,11 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Chat from "./pages/Chat";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import Chat from "./pages/Chat";
+
 export default function App() {
   return (
     <BrowserRouter>

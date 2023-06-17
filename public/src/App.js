@@ -1,5 +1,4 @@
 import React from "react";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -14,4 +13,5 @@ export default function App() {
         <Route path="/" element={<Chat />}></Route>
       </Routes>
     </BrowserRouter>
+  );
 }

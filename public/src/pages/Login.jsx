@@ -11,7 +11,7 @@ function Login() {
   const navigate = useNavigate();
   const [values, setValues] = useState({
     username: "",
-    password: ""
+    password: "",
   });
 
   const toastOptions = {
@@ -21,6 +21,12 @@ function Login() {
     draggable: true,
     theme: "dark",
   };
+
+  useEffect(() => {
+    if (localStorage.getItem("chat-app-user")) {
+      navigate("/");
+    }
+  }, []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -43,11 +49,11 @@ function Login() {
   };
 
   const handleValidation = () => {
-    const { username, password} = values;
+    const { username, password } = values;
     if (username === "" || password === "") {
       toast.error("Username and password is required.", toastOptions);
       return false;
-    } 
+    }
     return true;
   };
 

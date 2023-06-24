@@ -23,6 +23,12 @@ export default function SetAvatar() {
     theme: "dark",
   };
 
+  useEffect(() => {
+    if (!localStorage.getItem("chat-app-user")) {
+      navigate("/login");
+    }
+  }, []);
+
   const setProfilePicture = async () => {
     if (selectedAvatar === undefined) {
       toast.error("Please select avatar", toastOptions);
@@ -38,7 +44,10 @@ export default function SetAvatar() {
         localStorage.setItem("chat-app-user", JSON.stringify(user));
         navigate("/");
       } else {
-        toast.error("Error while setting avatar. Try again later.");
+        toast.error(
+          "Error while setting avatar. Try again later.",
+          toastOptions
+        );
       }
     }
   };

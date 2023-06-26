@@ -11,22 +11,17 @@ function Chat() {
   const [currentUser, setCurrentUser] = useState(undefined);
 
   useEffect(() => {
-     function loadUser() {
+    async function getContacts() {
+      let user;
       if (!localStorage.getItem("chat-app-user")) {
         navigate("/login");
       } else {
-        setCurrentUser(JSON.parse(localStorage.getItem("chat-app-user")));
+        user = JSON.parse(localStorage.getItem("chat-app-user"));
+        setCurrentUser(user);
       }
-    }
-    loadUser();
-  }, []);
-
-  useEffect(() => {
-    async function getContacts() {
-      console.log("second useeffed", currentUser)
-      if (currentUser) {
-        if (currentUser.isAvatarImageSet) {
-          const data = await axios.get(`${allUsersRoute}/${currentUser._id}`);
+      if (user) {
+        if (user?.isAvatarImageSet) {
+          const data = await axios.get(`${allUsersRoute}/${user._id}`);
           setContacts(data.data);
         } else {
           navigate("/setAvatar");

@@ -28,7 +28,7 @@ export default function Contacts({ contacts, currentUser }) {
             {contacts.map((contact, index) => {
               return (
                 <div
-                  className={`constact ${
+                  className={`contact ${
                     index === currentSelected ? "selected" : ""
                   }`}
                   key={index}
@@ -135,7 +135,7 @@ const Container = styled.div`
       }
     }
     .username {
-      h2 {
+      h3 {
         color: white;
       }
     }

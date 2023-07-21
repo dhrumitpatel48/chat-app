@@ -97,7 +97,7 @@ const Container = styled.div`
     }
   }
   .chat-messages {
-    padding: 1rem 2rem;
+    padding: 2rem 3rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;

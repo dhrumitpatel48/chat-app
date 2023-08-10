@@ -2,7 +2,27 @@
 
 Welcome to the Awesome Chat Web Application! This is a web-based chat application built using Node.js, Express.js, React.js, MongoDB, HTML, CSS, Bcrypt.js, and Socket.io for real-time communication.
 
-<!-- ![Chat Application Screenshot](/path/to/screenshot.png) -->
+## Technologies Used
+
+- Node.js
+- Express.js
+- React.js
+- MongoDB
+- Socket.io
+- Bcrypt.js
+- HTML
+- CSS
+
+## Screenshots
+
+1. Register Page 
+![Chat Application Screenshot](/Demo/Signup-Page.png)
+2. Login Page
+![Chat Application Screenshot](/Demo/Login-Page.png)
+3. Home Page
+![Chat Application Screenshot](/Demo/Home_Page.png)
+4. Chat Container
+![Chat Application Screenshot](/Demo/Chat-Container.png)
 
 ## Features
 
@@ -26,24 +46,6 @@ Welcome to the Awesome Chat Web Application! This is a web-based chat applicatio
 1. Now Navigate to the Server and Start the server: `npm start`
 2. Navigate to the client and start the client: `cd public` then `yarn start`
 3. Open your browser and visit: `http://localhost:3000`
-
-## Screenshots
-
-<!-- ![Screenshot 1](/screenshots/screenshot1.png)
-![Screenshot 2](/screenshots/screenshot2.png) -->
-
-## Technologies Used
-
-- Node.js
-- Express.js
-- React.js
-- MongoDB
-- Socket.io
-- Bcrypt.js
-- HTML
-- CSS
-
-
 
 ## Contributing
 

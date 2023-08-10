@@ -24,6 +24,7 @@ Welcome to the Awesome Chat Web Application! This is a web-based chat applicatio
 4. Chat Container
 ![Chat Application Screenshot](/Demo/Chat-Container.png)
 
+
 ## Features
 
 - Real-time messaging using Socket.io
@@ -47,12 +48,9 @@ Welcome to the Awesome Chat Web Application! This is a web-based chat applicatio
 2. Navigate to the client and start the client: `cd public` then `yarn start`
 3. Open your browser and visit: `http://localhost:3000`
 
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you find any bugs or want to improve the application.
-
----
-
-<!-- **Note:** Replace the placeholders such as `/path/to/screenshot.png`, `/screenshots/screenshot1.png`, and `your-username` with actual paths and your GitHub username. -->
 
 For more detailed information on how to structure your README and what to include, you might want to check out the [GitHub Guide to Writing a README](https://guides.github.com/features/writing-a-readme/).
